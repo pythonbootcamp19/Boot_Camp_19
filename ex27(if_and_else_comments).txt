@@ -1,0 +1,23 @@
+and # both the condition has to be true
+or # one of the condition has to be true
+not # not negates the logic. opposite of true. negative truth.
+!= # not equal. is one more way to check the logic.
+== # if you are assigning a variable you use single = . But if you are checking the equal value == 
+>= #greater than or equal
+<= #less than or equal
+True # on or off, true or false two different state.  
+Flase #
+# We use The Truth Tables a lot in computer science
+if it's not false it's true (because there are only two state)
+not true false 
+True or False true. If one of the condition is true. the output will be true. Only one of the conditions has to be true.
+
+False or Flase. Both the conditions are false then it's false.
+
+and = both the conditions are false
+
+not or = whatever the answer/input opposite is true or false. 
+
+not and = converting it to opposite.
+
+

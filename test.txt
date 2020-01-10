@@ -1,0 +1,3 @@
+This file is a text file for ex16.py
+It'll delete what is written in the file
+and write whatever we typed in the command line

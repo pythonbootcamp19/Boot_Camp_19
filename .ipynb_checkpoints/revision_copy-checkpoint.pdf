@@ -1,0 +1,652 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#https://programmingwithmosh.com/python/python-3-cheat-sheet/"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Variables\n",
+    "\n",
+    "a = 1 #integer\n",
+    "b = 1.1 # float\n",
+    "c = \"a\" #string\n",
+    "d = True #boolean(True/False)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n",
+      "P\n",
+      "n\n",
+      "Pyt\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Strings\n",
+    "\n",
+    "x = \"Python\"\n",
+    "\n",
+    "print(len(x))\n",
+    "print(x[0])\n",
+    "print(x[-1])\n",
+    "print(x[0:3])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "John Smith\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Formatted strings\n",
+    "first = \"John\"\n",
+    "last = \"Smith\"\n",
+    "name = f\"{first} {last}\"\n",
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Escape Sequences\n",
+    "#\\\" \\' \\\\ \\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "mython\n"
+     ]
+    }
+   ],
+   "source": [
+    "#string methods\n",
+    "x = \"python\"\n",
+    "\n",
+    "# print(x.upper())\n",
+    "# print(x.lower())\n",
+    "# print(x.title())\n",
+    "# print(x.strip())\n",
+    "# print(x.find(\"p\"))\n",
+    "print(x.replace(\"p\",\"m\"))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n",
+      "10.0\n",
+      "True\n"
+     ]
+    },
+    {
+     "ename": "NameError",
+     "evalue": "name 'string' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-34-c7034310a1bd>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfloat\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mbool\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 6\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mstring\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m: name 'string' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "#Type Conversion\n",
+    "x = 10\n",
+    "print(int(x))\n",
+    "print(float(x))\n",
+    "print(bool(x))\n",
+    "#print(string(x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[]"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Falsy Values\n",
+    "0\n",
+    "\"\"\n",
+    "[]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "c\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Conditional Statements\n",
+    "x = 5\n",
+    "if x == 1:\n",
+    "    print(\"a\")\n",
+    "elif x == 3:\n",
+    "    print(\"b\")\n",
+    "else:\n",
+    "    print(\"c\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Major\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Chaining comparison operators\n",
+    "\n",
+    "age = 50\n",
+    "if age <= 65:\n",
+    "    print(\"Major\")\n",
+    "else:\n",
+    "    print(\"Senior\")          "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Loops\n",
+    "\n",
+    "for n in range(0,10):\n",
+    "    print(n)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 98,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "n: 0 -- 2\n",
+      "n: 2 -- 2\n",
+      "n: 4 -- 2\n",
+      "n: 6 -- 2\n",
+      "n: 8 -- 2\n",
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "# For Loops\n",
+    "a = 2\n",
+    "for n in range(0,10,2):\n",
+    "    print(f\"n: {n} -- {a}\")\n",
+    "    \n",
+    "for n in range(0,10):\n",
+    "    print(n)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 101,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "# While Loops\n",
+    "z = 0\n",
+    "while z <10:\n",
+    "    print(z)\n",
+    "    z = z + 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 131,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "execution_count": 131,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Functions\n",
+    "def increment(number, by=1):\n",
+    "    return number + by\n",
+    "\n",
+    "increment(number, by=1)\n",
+    "\n",
+    "#Keyword arguments\n",
+    "increment(3, by=1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 130,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Variable number of arguments:\n",
+    "def multiply(*numbers):\n",
+    "    for number in numbers:\n",
+    "        print(number)\n",
+    "        \n",
+    "multiply(1,2,3,4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 141,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Variable number of keyword arguments\n",
+    "def save_user(**user):\n",
+    "\n",
+    "save_user(id=1,name=\"John\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 147,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['a', 'b', 'c']\n",
+      "[0, 1, 2, 3]\n",
+      "[[0, 1], [2, 3]]\n",
+      "[0, 0, 0, 0, 0]\n",
+      "[0, 0, 0, 0, 0, 'a', 'b', 'c']\n",
+      "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Lists\n",
+    "#Creating Lists\n",
+    "letters = [\"a\",\"b\",\"c\"]\n",
+    "matrix = [0,1,2,3]\n",
+    "matrix1 = [[0,1],[2,3]]\n",
+    "zeros = [0]*5\n",
+    "combined = zeros + letters\n",
+    "numbers = list(range(20))\n",
+    "\n",
+    "print(letters)\n",
+    "print(matrix)\n",
+    "print(matrix1)\n",
+    "print(zeros)\n",
+    "print(combined)\n",
+    "print(numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 163,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "a\n",
+      "d\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Accessing items\n",
+    "letters = [\"a\",\"b\",\"c\",\"d\"]\n",
+    "print(letters[0])\n",
+    "print(letters[-1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['a', 'b', 'c']\n",
+      "['a', 'b', 'c']\n",
+      "['a', 'b', 'c', 'd', 'e', 'f']\n",
+      "['a', 'b', 'c', 'd', 'e', 'f']\n",
+      "['a', 'c', 'e']\n",
+      "['f', 'e', 'd', 'c', 'b', 'a']\n",
+      "\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "#slicing lists\n",
+    "letters = [\"a\",\"b\",\"c\",\"d\",\"e\",\"f\"]\n",
+    "\n",
+    "print(letters[0:3])\n",
+    "print(letters[:3])\n",
+    "print(letters[0:])\n",
+    "print(letters[:])\n",
+    "print(letters[::2])\n",
+    "print(letters[::-1])\n",
+    "#print(letters[]) #invalid syntax\n",
+    "print(\"\\n\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "a\n",
+      "b\n",
+      "c d e f\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Unpacking\n",
+    "\n",
+    "letters = [\"a\",\"b\",\"c\",\"d\",\"e\",\"f\"]\n",
+    "\n",
+    "first,second,*other = letters\n",
+    "\n",
+    "print(first)\n",
+    "print(second)\n",
+    "print(*other)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "a\n",
+      "b\n",
+      "c\n",
+      "d\n",
+      "\n",
+      "\n",
+      "4\n",
+      "\n",
+      "\n",
+      "a\n",
+      "b\n",
+      "c\n",
+      "d\n",
+      "\n",
+      "\n",
+      "['a', 'b', 'c', 'd']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Looping over list\n",
+    "\n",
+    "letters = [\"a\",\"b\",\"c\",\"d\"]\n",
+    "\n",
+    "for i in letters:\n",
+    "     print(i)\n",
+    "print(\"\\n\")\n",
+    "\n",
+    "a = letters\n",
+    "\n",
+    "print(len(a))\n",
+    "print(\"\\n\")\n",
+    "\n",
+    "for a in range(0,len(a)):\n",
+    "    print(letters[a])\n",
+    "\n",
+    "print(\"\\n\")\n",
+    "\n",
+    "print(letters)\n",
+    "\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0 a\n",
+      "1 b\n",
+      "2 c\n",
+      "3 d\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Enumerate\n",
+    "\n",
+    "letters = [\"a\",\"b\",\"c\",\"d\"]\n",
+    "\n",
+    "for index, letter in enumerate(letters):\n",
+    "    print(index, letter)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['a', 'b', 'c', 'e']\n",
+      "\n",
+      "\n",
+      "['-', 'a', 'b', 'c', 'e']\n",
+      "['-', 'a', '>', 'b', 'c', 'e']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Adding items\n",
+    "letters = [\"a\",\"b\",\"c\"]\n",
+    "letters.append(\"e\")\n",
+    "print(letters)\n",
+    "print(\"\\n\")\n",
+    "\n",
+    "letters.insert(0,\"-\")\n",
+    "print(letters)\n",
+    "letters.insert(2,\">\")\n",
+    "print(letters)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['a', 'b', 'c', 'd']\n",
+      "['b', 'c', 'd']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Removing items\n",
+    "letters = [\"a\",\"b\",\"c\",\"d\",\"e\"]\n",
+    "\n",
+    "letters.pop()\n",
+    "print(letters)\n",
+    "letters.pop(0)\n",
+    "print(letters)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}

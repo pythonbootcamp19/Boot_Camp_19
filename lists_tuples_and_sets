@@ -1,0 +1,2 @@
+courses = ['History', 'Math', 'Physics', 'Education']
+print(courses)

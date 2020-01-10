@@ -1,0 +1,3 @@
+x = 'Uled by Mrstark\t2850\t1175'
+a = x.split(' ')
+print(a)

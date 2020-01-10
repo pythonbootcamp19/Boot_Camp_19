@@ -1,0 +1,225 @@
+print() = it'll print/display on screen. it is case sensitive. small p
+print("hello") or print('hello') = it doesn't matter single or double quote. it'll print the same
+# = it's for comment. for multiple line comments, select all and press ^C /
+print('I "said" do not touch this.') = will print I "said" do not touch this
+print("Hens", 25+30/6) = It'll print Hen, then and calculate 30/6 = 5, then calculate 25+5 = 30
+print ("Roosters",100 - 25 * 3 % 4) = 25 time 3 = 75, then 75 %(mod/modulo) 4 = 3, then calculate 100 - 3 = 97
+BODMAS (or PEDMAS) = is an cronym and stands for Bracket, Of, Division, Multiplication, Addition and Substraction
+print (2*((3*5)-1)/2) = It'll calculate the innermost bracket first. 3*5 = 15,then-1,so 15-1=14,then/2,14/2=7,then*2,so7*2=14
+= (single-equal) = single equal assigns the value on the right to a variable on the left. 
+== (double-equal) = double equal tests whether two things have the same value.
+x=100 or x = 100? = You should always add space around operators so that it's easier to read
+what does read the file backwad means? For e.g you have a file with 16 lines of code. You start at line 16,and then read 15 so on
+cars_driven = underscore in variable means imaaginary space between words in variable names
+print ("There are", cars, "cars available") = in this statement cars is a variable. you seperate it by comma
+my_name = always start a variable name with a character
+print(f"He's {my_height} inches tall.") = f (formatting)
+x = f"There are {types_of_people} types of people."=You can put a sentence as well as another variable in that sentence to a variable
+There are different ways to write/print (output on the screen) the same sentence
+print(joke_evaluation.format(hilarious)) = Isn't that joke so funny?!False
+print(f"Isnt'that joke so funny?! {hilarious}") = Isn't that joke so funny?!False
+print((joke_evaluation),(hilarious)) = Isn't that joke so funny?!False
+w = "This is the left side of...."
+e = "a string with a right side."
+print(w+e) = we will get the output "This is the left side of....a string with a right side."
+print(end1 + end2 + end3, end=' ' = end=' 'is just to say that you want a space after the end of the statement instead of a new line character.
+file_name = input("Enter your file name? :") / input() is python function. File name will be stored in the variable file_name
+txt = open(file_name, 'w') / open is a python function. By default file opens in read mode ('r'). If you want to write in file then you have to mention 'w' for write mode.
+line1 = input("Enter line 1: ") // input is a python function. whatever user type will be store in variable line1
+line2 = input("Enter line 2: ")
+line3 = input("Enter line 3: ")
+txt.write(line1) // write is a python function
+txt.write(line2) // "   "  "
+txt.write(line3)// "    "  "
+txt.close() // close is a python function. If file is in write mode you don't need to close the file at the end but if it's in write mode then you have to close the file.
+read_file = open(file_name) // open is a python function. Whatever file name user have entered will be stored in read_file variable
+reading_file = read_file.read() // read is a python function
+size_of_file = len(reading_file) // len (length) is a python function
+print(f"length of the file is, {size_of_file}")
+file_name = input("Enter your file name? :") = file_name is a variable = input() user will input the file name and store that file name into variable file_name
+txt = open(file_name, 'w') // open file name entered by the user and convert it from read to write mode.
+months = "\nJan\nFeb\nMarch\nApr\nMay\nJun\nJuly\nAug" = \n is for new line it'll print Jan, Feb, .... in new line. months is a variable
+print ("""
+There's something going on here.
+With the three double-quotes.
+We'll be able to type as much as we like.
+Even 4 lines if we want, or 5, or 6.
+""") = for multiple lines is for multiple lines of texts.
+"\tI'm tabbed in." = is for Tab (single tab)
+persian_cat = "I'm split\non a line." = \n so it'll print I'm split and it'll print on a line another line (\n is new line)
+backslash_cat = "I'm \\ a \\ cat." = 
+\t* = is tab and bulletpoints 
+
+print("How old are you?", end=' ')
+age = input() // it'll ask question and whatever user input it'll store in variable name age. 
+
+from sys import argv
+argv = argument variable (command line argument variable). We give argument in command line. sys = is a part of Python standard library
+script = file name (entered by the user)
+script, first, second, third = argv = explained below
+script (script is a file name. Since it's a variable it can be named anything for e.g. file_name), first, second, third = argv
+first, second, third is a variable.
+
+
+from sys import argv = #Python library import argument variable
+
+ex15_sample.txt = #call a script text file that contains Python program. Filename will be what user enter.
+
+script_name, filename = argv #call a script text file that contains Python program. Filename will be what user enter.
+
+txt = open(filename) #txt is a variable. Save all the text from the text file into variable.
+
+print(f"Here's your file {filename}:") # when the user presses enter in terminal, it'll display the filename user entered
+
+print(txt.read()) #it'll print the text from the file name
+file_again = input(">") # it'll prompt the user
+Truncating = Truncate will erase the content of the file. But it'll still keep the file but file will be empty.
+
+--------
+end=' ' 
+--------
+end=' ' at the end of each print line. This tells print to not end the line with a newline character and go to the next line.
+
+-----
+ex16.py
+----
+
+#Reading and Writing Files
+# One way to remember what each of these does is to think of a vinyl record, cassette tape, VHS tape, DVD, or CD player. It'll ##overwrite whatever you type.
+
+from sys import argv
+
+script, filename = argv
+
+print(f"We're going to erase {filename}.")
+print("If you don't want that, hit CTRL-C (^C).") # It'll abort if you press ctrl C
+print("If you do want that, hit RETURN.") # If you press the enter It'll execute the function
+
+input("?")
+
+#w means write mode
+#r means read mode
+
+print("Opening the file....")
+target = open(filename, 'w')
+
+     
+print("Truncating the file. Goodbye!")
+target.truncate()
+
+print("Now I'm going to ask you for three lines.")
+line1 = input("line 1: ") # ask for user input
+line2 = input("line 2: ")
+line3 = input("line 3: ")
+
+print("I'm going to write these to the file.")
+
+target.write(line1)
+target.write("\n") # new line
+target.write(line2)
+target.write("\n")
+target.write(line3)
+target.write("\n")
+
+print("And finally, we close it.")
+target.close() # it'll close the file
+
+
+
+------
+ex.17py
+------
+
+#More Files
+#We’ll write a Python script to copy one file to another. It’ll be very short but will give you ideas about other things you can #do with files.
+
+from sys import argv
+
+#os.path is built in Python library. exists is a function
+#
+#type os.listdir()
+#
+from os.path import exists
+
+script,from_file,to_file = argv
+
+print(f"Copying from {from_file} to {to_file}")
+
+#we could do these two on one line, how?
+
+in_file = open(from_file)
+indata = in_file.read()
+
+print(f"The input file is {len(indata)} bytes long")
+print(f"Does the output file exist? {exists(to_file)}")
+print("Ready, hit RETURN to continue, CTRL-C to abort.")
+input()
+
+out_file = open(to_file, 'w')
+out_file.write(indata)
+
+print("Alright, all done.")
+out_file.close()
+in_file.close()
+
+-------
+ex18.py
+-------
+#Names, Variables, Code, Functions
+#Functions do three things:
+#1. They name pieces of code the way variables name strings and numbers.
+#2. They take arguments the way your scripts take argv.
+#3. Using 1 and 2, they let you make your own “mini-scripts” or “tiny commands.”
+#You can create a function by using the word def in Python. I’m going to have you make four different functions that work like #your scripts, and then I’ll show you how each one is related.
+# this one is like your scripts with argv
+#def = define
+# print_two = function name
+#args = arguments
+#*args = multiple arguments
+
+# #Create a function checklist for later exercises.
+# 1. Did you start your function definition with def?
+# 2. Does your function name have only characters and _ (underscore) characters?
+# 3. Did you put an open parenthesis right after the function name?
+# 4. Did you put your arguments after the parenthesis separated by commas?
+# 5. Did you make each argument unique (meaning no duplicated names)?
+# 6. Did you put a close parenthesis and a colon after the arguments?
+# 7. Did you indent all lines of code you want in the function four spaces? No more, no less.
+# 8. Did you “end” your function by going back to writing with no indent (dedenting, we call it)?
+
+# When you run (“use” or “call”) a function, check these things:
+# 1. Did you call/use/run this function by typing its name?
+# 2. Did you put the ( character after the name to run it?
+# 3. Did you put the values you want into the parentheses separated by commas?
+# 4. Did you end the function call with a ) character?
+# Use these two checklists on the remaining lessons until you do not need them anymore.
+# Finally, repeat this a few times to yourself: To “run,” “call,” or “use” a function each means the same thing.
+
+def print_two(*args): # def creates a function, print_two is a variable, (*args) number of arguments. In this case end number of arguments because "*".
+
+----
+ex19.py
+---
+def cheese_and_crackers(cheese_count, boxes_of_crackers): # define a function, and add variables cheese_count, and boxes_of_crackers to function cheese_and_crackers
+
+    print(f"You have {cheese_count} cheeses!")
+    print(f"You have {boxes_of_crackers} boxes of crackers!")
+    
+----------    
+# functions:
+----------
+you can define/write a function and not have any code in it but we can't leave it blank but if we want 
+to fill this function later we can use this pass keyword.
+
+def hello_func():
+    pass
+---------------------------------------------------
+# What is difference between function and method?
+---------------------------------------------------
+Method and function are the same thing but their are minor difference between them. these difference are : function return some value but method doesn't return anything . ... Method do not have independent existence that means they are defined inside the class.
+
+------------------------------------------------
+# what is the difference between print and return in python
+---------------------------------------------------
+
+print just shows the human user a string representing what is going on inside the computer. The computer cannot make use of that printing. return is how a function gives back a value. ... All functions will return a value, and if there is no return statement (or yield but don't worry about that yet), it will return None.

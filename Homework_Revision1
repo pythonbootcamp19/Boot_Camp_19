@@ -1,0 +1,11 @@
+You have to take input. Print Bio (Name, City Name, Profession, Age, Dream)
+You have to write all into a text file.
+print in Jupyter
+
+input function, write content in the file
+using terminal you have to take input (Name, City Name, etc.) and print Jupyter
+
+2. Enter file name. You have to read function to read the file
+
+3. Define a function, Call the function, and out put has to be using function (My name is.... My city name is.......My profession is.....
+

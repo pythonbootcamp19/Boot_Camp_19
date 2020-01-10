@@ -1,0 +1,2 @@
+This is a text file for exercise 17.
+Whatever we type in test1.txt file, It'll copy to test2.txt file.
